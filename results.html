@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ExamPro — Results</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand"><img src="logo.png" alt="logo"><h1 class="go-home" style="cursor:pointer">ExamPro</h1></div>
+    </nav>
+
+    <section style="margin-top:16px">
+      <h2>View Results</h2>
+      <p class="small">Enter your roll number to view results. (Demo data sample shown)</p>
+
+      <form id="resultsLookup" class="form" style="margin-top:12px">
+        <div style="display:flex;gap:8px;align-items:center">
+          <input type="text" name="roll" placeholder="Enter roll number e.g. 23ANHF" style="flex:1;padding:12px;border-radius:10px;border:1px solid #eef4ff">
+          <button class="btn" type="submit">Lookup</button>
+        </div>
+      </form>
+
+      <div id="resultsArea" style="margin-top:14px"></div>
+
+      <div style="margin-top:20px" class="rule">
+        <h3>Sample Records</h3>
+        <table class="table">
+          <thead><tr><th>Sno</th><th>Course Code</th><th>Course Name</th><th>Credit Points</th><th>Marks</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>23CXDF</td><td>DBMS</td><td>4.0</td><td>20.0</td></tr>
+            <tr><td>2</td><td>23ANEF</td><td>C++</td><td>4.0</td><td>20.0</td></tr>
+            <tr><td>3</td><td>23BNFF</td><td>C</td><td>4.0</td><td>20.0</td></tr>
+            <tr><td>4</td><td>23CNGF</td><td>HTML</td><td>4.0</td><td>20.0</td></tr>
+            <tr><td>5</td><td>23DNHF</td><td>PYTHON</td><td>4.0</td><td>20.0</td></tr>
+          </tbody>
+        </table>
+        <div class="result-summary" style="margin-top:12px"><strong>SGPA:</strong> 9.0 &nbsp;&nbsp; <strong>CGPA:</strong> 8.6</div>
+      </div>
+
+    </section>
+
+    <div class="footer">© ExamPro</div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
